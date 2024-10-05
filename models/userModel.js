@@ -11,6 +11,7 @@ const userSchema = mongoose.Schema(
       required: ["true", "veuillez inserer le champ email"],
       unique: true,
     },
+    // default: 'random password envoyé par mail a l'utilisateur'
     password: {
       type: String,
       required: ["true", "veuillez inserer le champ password"],
